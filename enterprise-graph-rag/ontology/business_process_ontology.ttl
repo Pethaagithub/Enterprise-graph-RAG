@@ -1,0 +1,118 @@
+@prefix : <http://example.org/o2c#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+#################################################################
+# ONTOLOGY METADATA
+#################################################################
+<http://example.org/o2c> a owl:Ontology ;
+    rdfs:label "Order-to-Cash (O2C) Business Process Ontology" ;
+    rdfs:comment "A minimal but realistic ontology for the order-to-cash business process: Customer places SalesOrder, which contains LineItems for Products, generates an Invoice, which is settled by a Payment, and is fulfilled by a Delivery. Modeled to mirror how an enterprise semantic layer spanning multiple source systems would represent this domain." .
+
+#################################################################
+# CLASSES
+#################################################################
+:Customer a owl:Class ; rdfs:label "Customer" ;
+    rdfs:comment "A business entity that purchases goods or services." .
+
+:SalesOrder a owl:Class ; rdfs:label "Sales Order" ;
+    rdfs:comment "A commercial document representing a customer's request to purchase." .
+
+:OrderLineItem a owl:Class ; rdfs:label "Order Line Item" ;
+    rdfs:comment "A single product line within a Sales Order." .
+
+:Product a owl:Class ; rdfs:label "Product" .
+
+:Invoice a owl:Class ; rdfs:label "Invoice" ;
+    rdfs:comment "A billing document generated from a Sales Order." .
+
+:Payment a owl:Class ; rdfs:label "Payment" ;
+    rdfs:comment "A monetary transaction that settles (fully or partially) an Invoice." .
+
+:Delivery a owl:Class ; rdfs:label "Delivery" ;
+    rdfs:comment "A shipment fulfilling a Sales Order." .
+
+#################################################################
+# OBJECT PROPERTIES (relationships / edges)
+#################################################################
+:places a owl:ObjectProperty ;
+    rdfs:domain :Customer ; rdfs:range :SalesOrder ;
+    rdfs:label "places" .
+
+:containsLineItem a owl:ObjectProperty ;
+    rdfs:domain :SalesOrder ; rdfs:range :OrderLineItem ;
+    rdfs:label "contains line item" .
+
+:forProduct a owl:ObjectProperty ;
+    rdfs:domain :OrderLineItem ; rdfs:range :Product ;
+    rdfs:label "for product" .
+
+:generatesInvoice a owl:ObjectProperty ;
+    rdfs:domain :SalesOrder ; rdfs:range :Invoice ;
+    rdfs:label "generates invoice" .
+
+:settledByPayment a owl:ObjectProperty ;
+    rdfs:domain :Invoice ; rdfs:range :Payment ;
+    rdfs:label "settled by payment" .
+
+:fulfilledByDelivery a owl:ObjectProperty ;
+    rdfs:domain :SalesOrder ; rdfs:range :Delivery ;
+    rdfs:label "fulfilled by delivery" .
+
+#################################################################
+# DATATYPE PROPERTIES (attributes / literals)
+#################################################################
+:customerName a owl:DatatypeProperty ; rdfs:domain :Customer ; rdfs:range xsd:string .
+:customerSegment a owl:DatatypeProperty ; rdfs:domain :Customer ; rdfs:range xsd:string .
+:customerCountry a owl:DatatypeProperty ; rdfs:domain :Customer ; rdfs:range xsd:string .
+
+:orderId a owl:DatatypeProperty ; rdfs:domain :SalesOrder ; rdfs:range xsd:string .
+:orderDate a owl:DatatypeProperty ; rdfs:domain :SalesOrder ; rdfs:range xsd:date .
+:orderStatus a owl:DatatypeProperty ; rdfs:domain :SalesOrder ; rdfs:range xsd:string .
+
+:quantity a owl:DatatypeProperty ; rdfs:domain :OrderLineItem ; rdfs:range xsd:integer .
+:unitPrice a owl:DatatypeProperty ; rdfs:domain :OrderLineItem ; rdfs:range xsd:decimal .
+
+:productName a owl:DatatypeProperty ; rdfs:domain :Product ; rdfs:range xsd:string .
+:productCategory a owl:DatatypeProperty ; rdfs:domain :Product ; rdfs:range xsd:string .
+
+:invoiceId a owl:DatatypeProperty ; rdfs:domain :Invoice ; rdfs:range xsd:string .
+:invoiceAmount a owl:DatatypeProperty ; rdfs:domain :Invoice ; rdfs:range xsd:decimal .
+:invoiceDueDate a owl:DatatypeProperty ; rdfs:domain :Invoice ; rdfs:range xsd:date .
+:invoiceStatus a owl:DatatypeProperty ; rdfs:domain :Invoice ; rdfs:range xsd:string .
+
+:paymentAmount a owl:DatatypeProperty ; rdfs:domain :Payment ; rdfs:range xsd:decimal .
+:paymentDate a owl:DatatypeProperty ; rdfs:domain :Payment ; rdfs:range xsd:date .
+:paymentMethod a owl:DatatypeProperty ; rdfs:domain :Payment ; rdfs:range xsd:string .
+
+:deliveryDate a owl:DatatypeProperty ; rdfs:domain :Delivery ; rdfs:range xsd:date .
+:deliveryStatus a owl:DatatypeProperty ; rdfs:domain :Delivery ; rdfs:range xsd:string .
+
+#################################################################
+# SHACL SHAPES (validation constraints — enterprise data quality rules)
+#################################################################
+:InvoiceShape a sh:NodeShape ;
+    sh:targetClass :Invoice ;
+    sh:property [
+        sh:path :invoiceAmount ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:minInclusive 0.0 ;
+        rdfs:comment "An invoice must have a non-negative amount."
+    ] ;
+    sh:property [
+        sh:path :settledByPayment ;
+        sh:maxCount 5 ;
+        rdfs:comment "An invoice may be settled by multiple partial payments, but not unbounded — a data-quality guard."
+    ] .
+
+:SalesOrderShape a sh:NodeShape ;
+    sh:targetClass :SalesOrder ;
+    sh:property [
+        sh:path :places ;
+        sh:minCount 0 ;
+        rdfs:comment "Inverse constraint expressed for documentation: every SalesOrder must be reachable from exactly one Customer via :places."
+    ] .

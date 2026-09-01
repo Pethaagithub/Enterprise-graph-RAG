@@ -1,0 +1,1068 @@
+@prefix data: <http://example.org/o2c/data#> .
+@prefix o2c: <http://example.org/o2c#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:customer_0 a o2c:Customer ;
+    o2c:customerCountry "Germany" ;
+    o2c:customerName "Rodriguez, Figueroa and Sanchez" ;
+    o2c:customerSegment "SMB" ;
+    o2c:places data:order_1 .
+
+data:customer_1 a o2c:Customer ;
+    o2c:customerCountry "Japan" ;
+    o2c:customerName "Doyle Ltd" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_2 .
+
+data:customer_10 a o2c:Customer ;
+    o2c:customerCountry "Brazil" ;
+    o2c:customerName "Blair PLC" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_23,
+        data:order_24,
+        data:order_25,
+        data:order_26 .
+
+data:customer_11 a o2c:Customer ;
+    o2c:customerCountry "Japan" ;
+    o2c:customerName "Dudley Group" ;
+    o2c:customerSegment "Mid-Market" ;
+    o2c:places data:order_27,
+        data:order_28,
+        data:order_29,
+        data:order_30 .
+
+data:customer_2 a o2c:Customer ;
+    o2c:customerCountry "Brazil" ;
+    o2c:customerName "Mcclain, Miller and Henderson" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_3 .
+
+data:customer_3 a o2c:Customer ;
+    o2c:customerCountry "Brazil" ;
+    o2c:customerName "Davis and Sons" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_4,
+        data:order_5,
+        data:order_6 .
+
+data:customer_4 a o2c:Customer ;
+    o2c:customerCountry "USA" ;
+    o2c:customerName "Guzman, Hoffman and Baldwin" ;
+    o2c:customerSegment "SMB" ;
+    o2c:places data:order_10,
+        data:order_7,
+        data:order_8,
+        data:order_9 .
+
+data:customer_5 a o2c:Customer ;
+    o2c:customerCountry "India" ;
+    o2c:customerName "Gardner, Robinson and Lawrence" ;
+    o2c:customerSegment "SMB" ;
+    o2c:places data:order_11,
+        data:order_12,
+        data:order_13,
+        data:order_14 .
+
+data:customer_6 a o2c:Customer ;
+    o2c:customerCountry "Germany" ;
+    o2c:customerName "Blake and Sons" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_15 .
+
+data:customer_7 a o2c:Customer ;
+    o2c:customerCountry "Germany" ;
+    o2c:customerName "Henderson, Ramirez and Lewis" ;
+    o2c:customerSegment "Mid-Market" ;
+    o2c:places data:order_16,
+        data:order_17 .
+
+data:customer_8 a o2c:Customer ;
+    o2c:customerCountry "Germany" ;
+    o2c:customerName "Garcia-James" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_18 .
+
+data:customer_9 a o2c:Customer ;
+    o2c:customerCountry "India" ;
+    o2c:customerName "Abbott-Munoz" ;
+    o2c:customerSegment "Enterprise" ;
+    o2c:places data:order_19,
+        data:order_20,
+        data:order_21,
+        data:order_22 .
+
+data:delivery_1 a o2c:Delivery ;
+    o2c:deliveryDate "2026-07-14"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_10 a o2c:Delivery ;
+    o2c:deliveryDate "2026-01-20"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_11 a o2c:Delivery ;
+    o2c:deliveryDate "2026-06-24"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_12 a o2c:Delivery ;
+    o2c:deliveryDate "2026-07-11"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_13 a o2c:Delivery ;
+    o2c:deliveryDate "2026-02-06"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_14 a o2c:Delivery ;
+    o2c:deliveryDate "2026-01-26"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_15 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-18"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_16 a o2c:Delivery ;
+    o2c:deliveryDate "2026-01-19"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_17 a o2c:Delivery ;
+    o2c:deliveryDate "2026-06-29"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_18 a o2c:Delivery ;
+    o2c:deliveryDate "2026-02-08"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_19 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-09"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_2 a o2c:Delivery ;
+    o2c:deliveryDate "2026-05-27"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_20 a o2c:Delivery ;
+    o2c:deliveryDate "2026-03-14"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_21 a o2c:Delivery ;
+    o2c:deliveryDate "2026-07-01"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_22 a o2c:Delivery ;
+    o2c:deliveryDate "2026-05-30"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_23 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-08"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_24 a o2c:Delivery ;
+    o2c:deliveryDate "2026-03-07"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_25 a o2c:Delivery ;
+    o2c:deliveryDate "2026-03-16"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_26 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-07"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_27 a o2c:Delivery ;
+    o2c:deliveryDate "2026-05-31"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_3 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-07"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:delivery_4 a o2c:Delivery ;
+    o2c:deliveryDate "2026-05-06"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_5 a o2c:Delivery ;
+    o2c:deliveryDate "2026-04-14"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_6 a o2c:Delivery ;
+    o2c:deliveryDate "2026-02-09"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_7 a o2c:Delivery ;
+    o2c:deliveryDate "2026-06-09"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_8 a o2c:Delivery ;
+    o2c:deliveryDate "2026-02-08"^^xsd:date ;
+    o2c:deliveryStatus "Delivered" .
+
+data:delivery_9 a o2c:Delivery ;
+    o2c:deliveryDate "2026-02-02"^^xsd:date ;
+    o2c:deliveryStatus "In Transit" .
+
+data:invoice_1 a o2c:Invoice ;
+    o2c:invoiceAmount 3951.54 ;
+    o2c:invoiceDueDate "2026-08-08"^^xsd:date ;
+    o2c:invoiceId "INV-5001" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_1 .
+
+data:invoice_10 a o2c:Invoice ;
+    o2c:invoiceAmount 62713.63 ;
+    o2c:invoiceDueDate "2026-02-14"^^xsd:date ;
+    o2c:invoiceId "INV-5010" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_6 .
+
+data:invoice_11 a o2c:Invoice ;
+    o2c:invoiceAmount 3330.88 ;
+    o2c:invoiceDueDate "2026-07-21"^^xsd:date ;
+    o2c:invoiceId "INV-5011" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_7 .
+
+data:invoice_12 a o2c:Invoice ;
+    o2c:invoiceAmount 2069.87 ;
+    o2c:invoiceDueDate "2026-07-31"^^xsd:date ;
+    o2c:invoiceId "INV-5012" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_8 .
+
+data:invoice_13 a o2c:Invoice ;
+    o2c:invoiceAmount 44783.8 ;
+    o2c:invoiceDueDate "2026-03-05"^^xsd:date ;
+    o2c:invoiceId "INV-5013" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_14 a o2c:Invoice ;
+    o2c:invoiceAmount 8655.57 ;
+    o2c:invoiceDueDate "2026-02-15"^^xsd:date ;
+    o2c:invoiceId "INV-5014" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_9 .
+
+data:invoice_15 a o2c:Invoice ;
+    o2c:invoiceAmount 13148.66 ;
+    o2c:invoiceDueDate "2026-05-08"^^xsd:date ;
+    o2c:invoiceId "INV-5015" ;
+    o2c:invoiceStatus "Overdue" .
+
+data:invoice_16 a o2c:Invoice ;
+    o2c:invoiceAmount 31327.6 ;
+    o2c:invoiceDueDate "2026-02-15"^^xsd:date ;
+    o2c:invoiceId "INV-5016" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_10 .
+
+data:invoice_17 a o2c:Invoice ;
+    o2c:invoiceAmount 44868.5 ;
+    o2c:invoiceDueDate "2026-07-22"^^xsd:date ;
+    o2c:invoiceId "INV-5017" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_11 .
+
+data:invoice_18 a o2c:Invoice ;
+    o2c:invoiceAmount 8586.21 ;
+    o2c:invoiceDueDate "2026-03-05"^^xsd:date ;
+    o2c:invoiceId "INV-5018" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_12 .
+
+data:invoice_19 a o2c:Invoice ;
+    o2c:invoiceAmount 50778.42 ;
+    o2c:invoiceDueDate "2026-05-05"^^xsd:date ;
+    o2c:invoiceId "INV-5019" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_2 a o2c:Invoice ;
+    o2c:invoiceAmount 18225.2 ;
+    o2c:invoiceDueDate "2026-06-23"^^xsd:date ;
+    o2c:invoiceId "INV-5002" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_20 a o2c:Invoice ;
+    o2c:invoiceAmount 12294.2 ;
+    o2c:invoiceDueDate "2026-04-08"^^xsd:date ;
+    o2c:invoiceId "INV-5020" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_21 a o2c:Invoice ;
+    o2c:invoiceAmount 39679.91 ;
+    o2c:invoiceDueDate "2026-07-25"^^xsd:date ;
+    o2c:invoiceId "INV-5021" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_13 .
+
+data:invoice_22 a o2c:Invoice ;
+    o2c:invoiceAmount 14230.68 ;
+    o2c:invoiceDueDate "2026-06-23"^^xsd:date ;
+    o2c:invoiceId "INV-5022" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_14 .
+
+data:invoice_23 a o2c:Invoice ;
+    o2c:invoiceAmount 10804.16 ;
+    o2c:invoiceDueDate "2026-05-04"^^xsd:date ;
+    o2c:invoiceId "INV-5023" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_15 .
+
+data:invoice_24 a o2c:Invoice ;
+    o2c:invoiceAmount 8917.8 ;
+    o2c:invoiceDueDate "2026-04-01"^^xsd:date ;
+    o2c:invoiceId "INV-5024" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_16 .
+
+data:invoice_25 a o2c:Invoice ;
+    o2c:invoiceAmount 15763.03 ;
+    o2c:invoiceDueDate "2026-04-09"^^xsd:date ;
+    o2c:invoiceId "INV-5025" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_17 .
+
+data:invoice_26 a o2c:Invoice ;
+    o2c:invoiceAmount 26316.65 ;
+    o2c:invoiceDueDate "2026-04-29"^^xsd:date ;
+    o2c:invoiceId "INV-5026" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_18 .
+
+data:invoice_27 a o2c:Invoice ;
+    o2c:invoiceAmount 29290.0 ;
+    o2c:invoiceDueDate "2026-06-21"^^xsd:date ;
+    o2c:invoiceId "INV-5027" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_19 .
+
+data:invoice_3 a o2c:Invoice ;
+    o2c:invoiceAmount 28043.28 ;
+    o2c:invoiceDueDate "2026-05-02"^^xsd:date ;
+    o2c:invoiceId "INV-5003" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_2 .
+
+data:invoice_4 a o2c:Invoice ;
+    o2c:invoiceAmount 31266.68 ;
+    o2c:invoiceDueDate "2026-05-27"^^xsd:date ;
+    o2c:invoiceId "INV-5004" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_3 .
+
+data:invoice_5 a o2c:Invoice ;
+    o2c:invoiceAmount 17727.22 ;
+    o2c:invoiceDueDate "2026-05-08"^^xsd:date ;
+    o2c:invoiceId "INV-5005" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_4 .
+
+data:invoice_6 a o2c:Invoice ;
+    o2c:invoiceAmount 37353.21 ;
+    o2c:invoiceDueDate "2026-03-07"^^xsd:date ;
+    o2c:invoiceId "INV-5006" ;
+    o2c:invoiceStatus "Overdue" .
+
+data:invoice_7 a o2c:Invoice ;
+    o2c:invoiceAmount 58369.14 ;
+    o2c:invoiceDueDate "2026-07-02"^^xsd:date ;
+    o2c:invoiceId "INV-5007" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_8 a o2c:Invoice ;
+    o2c:invoiceAmount 17506.62 ;
+    o2c:invoiceDueDate "2026-02-28"^^xsd:date ;
+    o2c:invoiceId "INV-5008" ;
+    o2c:invoiceStatus "Unpaid" .
+
+data:invoice_9 a o2c:Invoice ;
+    o2c:invoiceAmount 17537.65 ;
+    o2c:invoiceDueDate "2026-02-27"^^xsd:date ;
+    o2c:invoiceId "INV-5009" ;
+    o2c:invoiceStatus "Paid" ;
+    o2c:settledByPayment data:payment_5 .
+
+data:line_10_2290 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 16 ;
+    o2c:unitPrice 1641.25 .
+
+data:line_10_3705 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 17 ;
+    o2c:unitPrice 1751.24 .
+
+data:line_10_9727 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_2 ;
+    o2c:quantity 5 ;
+    o2c:unitPrice 1336.51 .
+
+data:line_11_2049 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 1 ;
+    o2c:unitPrice 1197.2 .
+
+data:line_11_9479 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_7 ;
+    o2c:quantity 4 ;
+    o2c:unitPrice 533.42 .
+
+data:line_12_2104 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 11 ;
+    o2c:unitPrice 188.17 .
+
+data:line_13_4119 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 4 ;
+    o2c:unitPrice 1335.02 .
+
+data:line_13_6804 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_6 ;
+    o2c:quantity 14 ;
+    o2c:unitPrice 960.7 .
+
+data:line_13_8744 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 16 ;
+    o2c:unitPrice 1624.62 .
+
+data:line_14_2790 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 7 ;
+    o2c:unitPrice 420.91 .
+
+data:line_14_8350 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_2 ;
+    o2c:quantity 14 ;
+    o2c:unitPrice 407.8 .
+
+data:line_15_3724 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_6 ;
+    o2c:quantity 16 ;
+    o2c:unitPrice 988.65 .
+
+data:line_16_5345 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_7 ;
+    o2c:quantity 10 ;
+    o2c:unitPrice 874.86 .
+
+data:line_16_8973 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_2 ;
+    o2c:quantity 7 ;
+    o2c:unitPrice 628.58 .
+
+data:line_17_1821 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_7 ;
+    o2c:quantity 17 ;
+    o2c:unitPrice 1842.8 .
+
+data:line_18_2343 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_6 ;
+    o2c:quantity 19 ;
+    o2c:unitPrice 1152.19 .
+
+data:line_18_2964 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 19 ;
+    o2c:unitPrice 1209.31 .
+
+data:line_19_2638 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 465.65 .
+
+data:line_19_8491 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 3 ;
+    o2c:unitPrice 68.17 .
+
+data:line_1_3286 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 219.53 .
+
+data:line_20_9666 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 633.79 .
+
+data:line_20_9900 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 20 ;
+    o2c:unitPrice 1968.51 .
+
+data:line_21_3546 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 10 ;
+    o2c:unitPrice 1229.42 .
+
+data:line_22_1832 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 14 ;
+    o2c:unitPrice 1667.23 .
+
+data:line_22_9280 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_7 ;
+    o2c:quantity 9 ;
+    o2c:unitPrice 1815.41 .
+
+data:line_23_3442 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 12 ;
+    o2c:unitPrice 1185.89 .
+
+data:line_24_6862 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 8 ;
+    o2c:unitPrice 1350.52 .
+
+data:line_25_7755 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 6 ;
+    o2c:unitPrice 1486.3 .
+
+data:line_26_2771 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_6 ;
+    o2c:quantity 2 ;
+    o2c:unitPrice 1724.26 .
+
+data:line_26_4644 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 15 ;
+    o2c:unitPrice 731.83 .
+
+data:line_26_4728 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 1 ;
+    o2c:unitPrice 1337.06 .
+
+data:line_27_5279 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_2 ;
+    o2c:quantity 19 ;
+    o2c:unitPrice 1926.94 .
+
+data:line_27_5349 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 4 ;
+    o2c:unitPrice 1213.31 .
+
+data:line_27_6425 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 4 ;
+    o2c:unitPrice 1760.22 .
+
+data:line_28_4114 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 2 ;
+    o2c:unitPrice 1432.13 .
+
+data:line_28_8149 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 13 ;
+    o2c:unitPrice 1804.03 .
+
+data:line_29_6143 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 10 ;
+    o2c:unitPrice 1038.89 .
+
+data:line_29_7691 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 13 ;
+    o2c:unitPrice 1409.56 .
+
+data:line_2_5557 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 6 ;
+    o2c:unitPrice 1411.37 .
+
+data:line_2_6574 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 5 ;
+    o2c:unitPrice 469.86 .
+
+data:line_2_9928 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_6 ;
+    o2c:quantity 8 ;
+    o2c:unitPrice 925.96 .
+
+data:line_30_7211 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_2 ;
+    o2c:quantity 20 ;
+    o2c:unitPrice 1159.76 .
+
+data:line_30_7653 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 10 ;
+    o2c:unitPrice 609.48 .
+
+data:line_3_5333 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 15 ;
+    o2c:unitPrice 1095.64 .
+
+data:line_3_6925 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 3 ;
+    o2c:unitPrice 139.36 .
+
+data:line_3_7201 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 621.7 .
+
+data:line_4_3664 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 12 ;
+    o2c:unitPrice 458.54 .
+
+data:line_4_5374 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 20 ;
+    o2c:unitPrice 1288.21 .
+
+data:line_5_1525 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 13 ;
+    o2c:unitPrice 572.09 .
+
+data:line_5_4456 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 7 ;
+    o2c:unitPrice 1328.11 .
+
+data:line_5_4598 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 2 ;
+    o2c:unitPrice 496.64 .
+
+data:line_6_3266 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_7 ;
+    o2c:quantity 3 ;
+    o2c:unitPrice 1523.78 .
+
+data:line_6_7543 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_5 ;
+    o2c:quantity 8 ;
+    o2c:unitPrice 1994.79 .
+
+data:line_6_9830 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 19 ;
+    o2c:unitPrice 885.45 .
+
+data:line_7_1188 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_1 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 1514.21 .
+
+data:line_7_8668 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_4 ;
+    o2c:quantity 18 ;
+    o2c:unitPrice 1728.52 .
+
+data:line_8_8433 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 9 ;
+    o2c:unitPrice 1945.18 .
+
+data:line_9_3646 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_0 ;
+    o2c:quantity 20 ;
+    o2c:unitPrice 682.1 .
+
+data:line_9_9317 a o2c:OrderLineItem ;
+    o2c:forProduct data:product_3 ;
+    o2c:quantity 5 ;
+    o2c:unitPrice 779.13 .
+
+data:order_1 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_1_3286 ;
+    o2c:fulfilledByDelivery data:delivery_1 ;
+    o2c:generatesInvoice data:invoice_1 ;
+    o2c:orderDate "2026-07-09"^^xsd:date ;
+    o2c:orderId "SO-1001" ;
+    o2c:orderStatus "Completed" .
+
+data:order_10 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_10_2290,
+        data:line_10_3705,
+        data:line_10_9727 ;
+    o2c:fulfilledByDelivery data:delivery_10 ;
+    o2c:generatesInvoice data:invoice_10 ;
+    o2c:orderDate "2026-01-15"^^xsd:date ;
+    o2c:orderId "SO-1010" ;
+    o2c:orderStatus "Completed" .
+
+data:order_11 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_11_2049,
+        data:line_11_9479 ;
+    o2c:fulfilledByDelivery data:delivery_11 ;
+    o2c:generatesInvoice data:invoice_11 ;
+    o2c:orderDate "2026-06-21"^^xsd:date ;
+    o2c:orderId "SO-1011" ;
+    o2c:orderStatus "Completed" .
+
+data:order_12 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_12_2104 ;
+    o2c:fulfilledByDelivery data:delivery_12 ;
+    o2c:generatesInvoice data:invoice_12 ;
+    o2c:orderDate "2026-07-01"^^xsd:date ;
+    o2c:orderId "SO-1012" ;
+    o2c:orderStatus "Completed" .
+
+data:order_13 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_13_4119,
+        data:line_13_6804,
+        data:line_13_8744 ;
+    o2c:fulfilledByDelivery data:delivery_13 ;
+    o2c:generatesInvoice data:invoice_13 ;
+    o2c:orderDate "2026-02-03"^^xsd:date ;
+    o2c:orderId "SO-1013" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_14 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_14_2790,
+        data:line_14_8350 ;
+    o2c:fulfilledByDelivery data:delivery_14 ;
+    o2c:generatesInvoice data:invoice_14 ;
+    o2c:orderDate "2026-01-16"^^xsd:date ;
+    o2c:orderId "SO-1014" ;
+    o2c:orderStatus "Completed" .
+
+data:order_15 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_15_3724 ;
+    o2c:orderDate "2026-01-24"^^xsd:date ;
+    o2c:orderId "SO-1015" ;
+    o2c:orderStatus "Backordered" .
+
+data:order_16 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_16_5345,
+        data:line_16_8973 ;
+    o2c:fulfilledByDelivery data:delivery_15 ;
+    o2c:generatesInvoice data:invoice_15 ;
+    o2c:orderDate "2026-04-08"^^xsd:date ;
+    o2c:orderId "SO-1016" ;
+    o2c:orderStatus "Completed" .
+
+data:order_17 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_17_1821 ;
+    o2c:fulfilledByDelivery data:delivery_16 ;
+    o2c:generatesInvoice data:invoice_16 ;
+    o2c:orderDate "2026-01-16"^^xsd:date ;
+    o2c:orderId "SO-1017" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_18 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_18_2343,
+        data:line_18_2964 ;
+    o2c:fulfilledByDelivery data:delivery_17 ;
+    o2c:generatesInvoice data:invoice_17 ;
+    o2c:orderDate "2026-06-22"^^xsd:date ;
+    o2c:orderId "SO-1018" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_19 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_19_2638,
+        data:line_19_8491 ;
+    o2c:fulfilledByDelivery data:delivery_18 ;
+    o2c:generatesInvoice data:invoice_18 ;
+    o2c:orderDate "2026-02-03"^^xsd:date ;
+    o2c:orderId "SO-1019" ;
+    o2c:orderStatus "Completed" .
+
+data:order_2 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_2_5557,
+        data:line_2_6574,
+        data:line_2_9928 ;
+    o2c:fulfilledByDelivery data:delivery_2 ;
+    o2c:generatesInvoice data:invoice_2 ;
+    o2c:orderDate "2026-05-24"^^xsd:date ;
+    o2c:orderId "SO-1002" ;
+    o2c:orderStatus "Completed" .
+
+data:order_20 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_20_9666,
+        data:line_20_9900 ;
+    o2c:fulfilledByDelivery data:delivery_19 ;
+    o2c:generatesInvoice data:invoice_19 ;
+    o2c:orderDate "2026-04-05"^^xsd:date ;
+    o2c:orderId "SO-1020" ;
+    o2c:orderStatus "Completed" .
+
+data:order_21 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_21_3546 ;
+    o2c:fulfilledByDelivery data:delivery_20 ;
+    o2c:generatesInvoice data:invoice_20 ;
+    o2c:orderDate "2026-03-09"^^xsd:date ;
+    o2c:orderId "SO-1021" ;
+    o2c:orderStatus "Completed" .
+
+data:order_22 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_22_1832,
+        data:line_22_9280 ;
+    o2c:fulfilledByDelivery data:delivery_21 ;
+    o2c:generatesInvoice data:invoice_21 ;
+    o2c:orderDate "2026-06-25"^^xsd:date ;
+    o2c:orderId "SO-1022" ;
+    o2c:orderStatus "Completed" .
+
+data:order_23 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_23_3442 ;
+    o2c:fulfilledByDelivery data:delivery_22 ;
+    o2c:generatesInvoice data:invoice_22 ;
+    o2c:orderDate "2026-05-24"^^xsd:date ;
+    o2c:orderId "SO-1023" ;
+    o2c:orderStatus "Completed" .
+
+data:order_24 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_24_6862 ;
+    o2c:fulfilledByDelivery data:delivery_23 ;
+    o2c:generatesInvoice data:invoice_23 ;
+    o2c:orderDate "2026-04-04"^^xsd:date ;
+    o2c:orderId "SO-1024" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_25 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_25_7755 ;
+    o2c:fulfilledByDelivery data:delivery_24 ;
+    o2c:generatesInvoice data:invoice_24 ;
+    o2c:orderDate "2026-03-02"^^xsd:date ;
+    o2c:orderId "SO-1025" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_26 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_26_2771,
+        data:line_26_4644,
+        data:line_26_4728 ;
+    o2c:fulfilledByDelivery data:delivery_25 ;
+    o2c:generatesInvoice data:invoice_25 ;
+    o2c:orderDate "2026-03-10"^^xsd:date ;
+    o2c:orderId "SO-1026" ;
+    o2c:orderStatus "Completed" .
+
+data:order_27 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_27_5279,
+        data:line_27_5349,
+        data:line_27_6425 ;
+    o2c:orderDate "2026-06-23"^^xsd:date ;
+    o2c:orderId "SO-1027" ;
+    o2c:orderStatus "Backordered" .
+
+data:order_28 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_28_4114,
+        data:line_28_8149 ;
+    o2c:fulfilledByDelivery data:delivery_26 ;
+    o2c:generatesInvoice data:invoice_26 ;
+    o2c:orderDate "2026-03-30"^^xsd:date ;
+    o2c:orderId "SO-1028" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_29 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_29_6143,
+        data:line_29_7691 ;
+    o2c:orderDate "2026-01-18"^^xsd:date ;
+    o2c:orderId "SO-1029" ;
+    o2c:orderStatus "Backordered" .
+
+data:order_3 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_3_5333,
+        data:line_3_6925,
+        data:line_3_7201 ;
+    o2c:fulfilledByDelivery data:delivery_3 ;
+    o2c:generatesInvoice data:invoice_3 ;
+    o2c:orderDate "2026-04-02"^^xsd:date ;
+    o2c:orderId "SO-1003" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:order_30 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_30_7211,
+        data:line_30_7653 ;
+    o2c:fulfilledByDelivery data:delivery_27 ;
+    o2c:generatesInvoice data:invoice_27 ;
+    o2c:orderDate "2026-05-22"^^xsd:date ;
+    o2c:orderId "SO-1030" ;
+    o2c:orderStatus "Completed" .
+
+data:order_4 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_4_3664,
+        data:line_4_5374 ;
+    o2c:fulfilledByDelivery data:delivery_4 ;
+    o2c:generatesInvoice data:invoice_4 ;
+    o2c:orderDate "2026-04-27"^^xsd:date ;
+    o2c:orderId "SO-1004" ;
+    o2c:orderStatus "Completed" .
+
+data:order_5 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_5_1525,
+        data:line_5_4456,
+        data:line_5_4598 ;
+    o2c:fulfilledByDelivery data:delivery_5 ;
+    o2c:generatesInvoice data:invoice_5 ;
+    o2c:orderDate "2026-04-08"^^xsd:date ;
+    o2c:orderId "SO-1005" ;
+    o2c:orderStatus "Completed" .
+
+data:order_6 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_6_3266,
+        data:line_6_7543,
+        data:line_6_9830 ;
+    o2c:fulfilledByDelivery data:delivery_6 ;
+    o2c:generatesInvoice data:invoice_6 ;
+    o2c:orderDate "2026-02-05"^^xsd:date ;
+    o2c:orderId "SO-1006" ;
+    o2c:orderStatus "Completed" .
+
+data:order_7 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_7_1188,
+        data:line_7_8668 ;
+    o2c:fulfilledByDelivery data:delivery_7 ;
+    o2c:generatesInvoice data:invoice_7 ;
+    o2c:orderDate "2026-06-02"^^xsd:date ;
+    o2c:orderId "SO-1007" ;
+    o2c:orderStatus "Completed" .
+
+data:order_8 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_8_8433 ;
+    o2c:fulfilledByDelivery data:delivery_8 ;
+    o2c:generatesInvoice data:invoice_8 ;
+    o2c:orderDate "2026-01-29"^^xsd:date ;
+    o2c:orderId "SO-1008" ;
+    o2c:orderStatus "Completed" .
+
+data:order_9 a o2c:SalesOrder ;
+    o2c:containsLineItem data:line_9_3646,
+        data:line_9_9317 ;
+    o2c:fulfilledByDelivery data:delivery_9 ;
+    o2c:generatesInvoice data:invoice_9 ;
+    o2c:orderDate "2026-01-28"^^xsd:date ;
+    o2c:orderId "SO-1009" ;
+    o2c:orderStatus "In Fulfillment" .
+
+data:payment_1 a o2c:Payment ;
+    o2c:paymentAmount 3951.54 ;
+    o2c:paymentDate "2026-08-08"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_10 a o2c:Payment ;
+    o2c:paymentAmount 31327.6 ;
+    o2c:paymentDate "2026-02-14"^^xsd:date ;
+    o2c:paymentMethod "Direct Debit" .
+
+data:payment_11 a o2c:Payment ;
+    o2c:paymentAmount 44868.5 ;
+    o2c:paymentDate "2026-07-14"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_12 a o2c:Payment ;
+    o2c:paymentAmount 8586.21 ;
+    o2c:paymentDate "2026-02-22"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_13 a o2c:Payment ;
+    o2c:paymentAmount 39679.91 ;
+    o2c:paymentDate "2026-07-15"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_14 a o2c:Payment ;
+    o2c:paymentAmount 14230.68 ;
+    o2c:paymentDate "2026-06-19"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_15 a o2c:Payment ;
+    o2c:paymentAmount 10804.16 ;
+    o2c:paymentDate "2026-04-21"^^xsd:date ;
+    o2c:paymentMethod "Direct Debit" .
+
+data:payment_16 a o2c:Payment ;
+    o2c:paymentAmount 8917.8 ;
+    o2c:paymentDate "2026-03-19"^^xsd:date ;
+    o2c:paymentMethod "Direct Debit" .
+
+data:payment_17 a o2c:Payment ;
+    o2c:paymentAmount 15763.03 ;
+    o2c:paymentDate "2026-04-01"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_18 a o2c:Payment ;
+    o2c:paymentAmount 26316.65 ;
+    o2c:paymentDate "2026-04-23"^^xsd:date ;
+    o2c:paymentMethod "Credit Card" .
+
+data:payment_19 a o2c:Payment ;
+    o2c:paymentAmount 29290.0 ;
+    o2c:paymentDate "2026-06-11"^^xsd:date ;
+    o2c:paymentMethod "Credit Card" .
+
+data:payment_2 a o2c:Payment ;
+    o2c:paymentAmount 28043.28 ;
+    o2c:paymentDate "2026-04-23"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_3 a o2c:Payment ;
+    o2c:paymentAmount 31266.68 ;
+    o2c:paymentDate "2026-05-20"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_4 a o2c:Payment ;
+    o2c:paymentAmount 17727.22 ;
+    o2c:paymentDate "2026-04-24"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_5 a o2c:Payment ;
+    o2c:paymentAmount 17537.65 ;
+    o2c:paymentDate "2026-02-16"^^xsd:date ;
+    o2c:paymentMethod "Credit Card" .
+
+data:payment_6 a o2c:Payment ;
+    o2c:paymentAmount 62713.63 ;
+    o2c:paymentDate "2026-02-08"^^xsd:date ;
+    o2c:paymentMethod "Direct Debit" .
+
+data:payment_7 a o2c:Payment ;
+    o2c:paymentAmount 3330.88 ;
+    o2c:paymentDate "2026-07-14"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_8 a o2c:Payment ;
+    o2c:paymentAmount 2069.87 ;
+    o2c:paymentDate "2026-07-16"^^xsd:date ;
+    o2c:paymentMethod "Bank Transfer" .
+
+data:payment_9 a o2c:Payment ;
+    o2c:paymentAmount 8655.57 ;
+    o2c:paymentDate "2026-02-13"^^xsd:date ;
+    o2c:paymentMethod "Credit Card" .
+
+data:product_2 a o2c:Product ;
+    o2c:productCategory "Software" ;
+    o2c:productName "CloudSuite-Basic" .
+
+data:product_6 a o2c:Product ;
+    o2c:productCategory "IoT" ;
+    o2c:productName "Sensor-Module-A" .
+
+data:product_7 a o2c:Product ;
+    o2c:productCategory "IoT" ;
+    o2c:productName "Sensor-Module-B" .
+
+data:product_4 a o2c:Product ;
+    o2c:productCategory "Service" ;
+    o2c:productName "Support-Contract-Gold" .
+
+data:product_3 a o2c:Product ;
+    o2c:productCategory "Software" ;
+    o2c:productName "CloudSuite-Pro" .
+
+data:product_5 a o2c:Product ;
+    o2c:productCategory "Service" ;
+    o2c:productName "Support-Contract-Silver" .
+
+data:product_1 a o2c:Product ;
+    o2c:productCategory "Hardware" ;
+    o2c:productName "Widget-Y" .
+
+data:product_0 a o2c:Product ;
+    o2c:productCategory "Hardware" ;
+    o2c:productName "Widget-X" .
+

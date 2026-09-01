@@ -1,0 +1,4 @@
+rdflib>=7.0
+faker>=20.0
+pyshacl>=0.25
+anthropic>=0.30
